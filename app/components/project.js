@@ -8,9 +8,15 @@ const Project = ({projects}) => {
         <div key={project.id} className="card">
             <h2>{project.title}</h2>
             <p>{project.description}</p>
-            <Link href={project.link} target='_blank' className='link-btn'>
-                Go To Project
-            </Link>
+            <div className='project-links'>
+              <Link href={project.link} target='_blank' className='link-btn'>
+                  Go To Project
+              </Link>
+              <Link href={project.github} target='_blank' className='link-btn'>
+                  Go To GitHub
+              </Link>
+            </div>
+            
         </div>
       ))}
     </div>

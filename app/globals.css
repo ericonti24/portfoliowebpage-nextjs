@@ -22,9 +22,10 @@ p {
 .link-btn {
   color: white;
   border-radius: 4px;
-  font-size: 30px;
+  background-color: rgb(59, 146, 117);
   text-decoration: none;
   display: inline-block;
+  margin-right: 20px;
 }
 
 .header {
@@ -51,10 +52,10 @@ p {
   font-size: 24px;
   border-radius: 20px;
   margin: 0 1rem 0 1em;
-  /* margin: auto; */
   color: #fff;
   text-decoration: none;
-  /* background-color: rgb(100, 193, 162); */
 }
+
+
 
 

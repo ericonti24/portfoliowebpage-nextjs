@@ -1,0 +1,8 @@
+[
+    {
+        "id": 1,
+        "title": "Front End React Calendar", 
+        "description": "Persional project to create a calendar web page using React.js with day.js library. Hosted on Neliffy.",
+        "link": "https://cheery-clafoutis-925e19.netlify.app/"
+    }
+]

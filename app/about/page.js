@@ -2,7 +2,7 @@ import React from 'react'
 
 const AboutPage = () => {
   return (
-    <div>
+    <div style={{color: 'white'}}>
       <h1>About Page!</h1>
     </div>
   )

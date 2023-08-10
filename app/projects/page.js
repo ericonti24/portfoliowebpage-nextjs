@@ -18,11 +18,18 @@ const ProjectsPage = () => {
   },[])
 
   return (
-    <div>
+    <div style={{color: 'white'}}>
       <h1>Projects Page!</h1>
-      <Project projects={projects}/>
+      <div style={{
+        paddingTop: '50px'
+      }}>
+        <Project projects={projects} />
+      </div>
+      
     </div>
   )
 }
 
 export default ProjectsPage
+
+

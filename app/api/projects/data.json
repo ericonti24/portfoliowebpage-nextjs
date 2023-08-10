@@ -1,9 +1,18 @@
 [
     {
         "id": 1,
+        "image": "React Calendar.png",
         "title": "Front End React Calendar", 
-        "description": "Personal project to create a calendar web page using React.js with day.js library. Hosted on Netlify.",
+        "description": "Calendar web page using React.js with day.js library. Hosted on Netlify.",
         "link": "https://cheery-clafoutis-925e19.netlify.app/",
         "github": "https://github.com/ericonti24/calendar_app"
+    }, 
+    {
+        "id": 2,
+        "image": "",
+        "title": "To Do List", 
+        "description": "To do list using NextJS.",
+        "link": "",
+        "github": "https://github.com/ericonti24/todo-next12"
     }
 ]

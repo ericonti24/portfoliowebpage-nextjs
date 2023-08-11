@@ -1,6 +1,7 @@
 import { NextResponse } from 'next/server'
-import projects from './data.json'
+// import projects from './data.json'
+import {PROJECTS} from '../data/data.js'
 
 export async function GET(request) {
-    return NextResponse.json(projects)
+    return NextResponse.json(PROJECTS)
 }

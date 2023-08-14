@@ -3,7 +3,7 @@
 // import './globals.css'
 import { ChakraProvider, background, useColorModeValue, Box } from '@chakra-ui/react'
 // import NavBar from './components/navbar'
-import NavBar from './components/chakraNavBar'
+import NavBar from './components/ChakraNavBar'
 import Footer from './components/footer'
 
 // export const metadata = {

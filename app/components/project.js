@@ -12,8 +12,6 @@ import {
   Image,
 } from '@chakra-ui/react'
 
-// import image from '../api/data/images/Calendar-1.jpg';
-
 export default function Project({projects}) {
   return (<Center>
     <Stack>
@@ -27,6 +25,7 @@ export default function Project({projects}) {
         p={6}
         overflow={'hidden'}
         m={4}
+        key={project.id}
       >
         <Box h={'210px'} bg={'gray.100'} mt={-6} mx={-6} mb={6} pos={'relative'}>
          <Image h={'208px'} w={'500px'} src={project.image} alt='calendar-image'/>

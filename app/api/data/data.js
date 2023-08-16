@@ -1,4 +1,3 @@
-// import image1 from './images/calendar.jpg'
 
 
 export const PROJECTS = [

@@ -26,44 +26,55 @@ export default function ProductSimple() {
         </Box>
         <Spacer />
           <Box
-            role={'group'}
-            // p={6}
-            p='4'
-            maxW={'330px'}
-            w={'full'}
-            bg={useColorModeValue('black')}
-            boxShadow={'2xl'}
-            rounded={'lg'}
-            // pos={'relative'}
-            zIndex={1}
+            // role={'group'}
+            // // p={6}
+            // p='4'
+            // maxW={'300px'}
+            // w={'full'}
+            // bg={useColorModeValue('black')}
+            // boxShadow={'2xl'}
+            // rounded={'lg'}
+            // // pos={'relative'}
+            // zIndex={1}
+            
+            p='20'
+            boxSize={'1000'}
+            // bg={useColorModeValue('black')}
+            // boxShadow={'2xl'}
+            // maxW={'400px'}
+            // zIndex={1}
+            
           >
             <Box
               rounded={'lg'}
               // mt={-12}
               pos={'relative'}
-              height={'230px'}
+              height={'300px'}
               _after={{
-                transition: 'all .3s ease',
+                // transition: 'all .3s ease',
                 content: '""',
                 w: 'full',
                 h: 'full',
                 pos: 'absolute',
-                top: 5,
+                top: 0,
                 left: 0,
                 backgroundImage: `url(${IMAGE})`,
-                filter: 'blur(15px)',
+                filter: 'blur(30px)',
                 zIndex: -1,
               }}
-              _groupHover={{
-                _after: {
-                  filter: 'blur(20px)',
-                },
-              }}>
+              // _groupHover={{
+              //   _after: {
+              //     filter: 'blur(20px)',
+              //   },
+              // }}
+            >
               <Image
                 rounded={'lg'}
-                height={320}
-                width={282}
-                objectFit={'cover'}
+                // height={300}
+                // width={400}
+                // boxSize={'500'}
+                // objectFit={'cover'}
+                // maxW={'400px'}
                 src={IMAGE}
                 alt="#"
               />

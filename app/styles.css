@@ -9,6 +9,9 @@
 h1, h2 {
     color: white;
 }
+/* p {
+    color: green;
+} */
 
 .card-container {
     width: 400px;
@@ -34,7 +37,7 @@ h1, h2 {
 }
 
 .front-card img {
-    max-width: 100%;
+    max-width: 900px;
     max-height: 100%;
     border-radius: 8px;
 }
@@ -50,8 +53,9 @@ h1, h2 {
     color: black;
   }
 
-  #keyboard-key, #keyboard-value {
-    color: black;
+  .keyboard-heading {
+    font-size: 30px;
+    max-width: 900px;
   }
 
   

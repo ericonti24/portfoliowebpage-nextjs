@@ -21,8 +21,8 @@ export default function ProductSimple() {
   return (
     <Flex>
         <Box p='60'>
-        <Heading color={'white'} fontFamily='sans-serif' fontSize="170px">Hi, I'm Eric.</Heading>
-        <Text color='white' p='2' fontSize="40px">Web designer, developer and tech enthusiast!</Text>
+        <Heading color={'white'} fontFamily='sans-serif' fontSize="170px" p='20'>Hi, I'm Eric.</Heading>
+        <Text color='white' p='20' fontSize="40px">Web designer, developer and tech enthusiast!</Text>
         </Box>
         <Spacer />
           <Box

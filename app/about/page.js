@@ -12,7 +12,11 @@ const AboutPage = () => {
   return (
       <div className='about-container'>
         {/* <h1>About</h1> */}
-        <h2>One thing I love to do is to build mechanical keyboards. Here are some that I have built, and more to come. Hover over them to see more info.</h2>
+        <h2 className='keyboard-heading'>
+            One thing I love to do is to build mechanical keyboards. 
+            Here are some that I have built, and more to come. 
+            Hover over them to see more info.
+          </h2>
       {keyboards.map((keyboard, index) => (
         <div 
           className='card-container'
@@ -31,13 +35,13 @@ const AboutPage = () => {
             className={`back-card ${hoveredIndex === index ? 'hover' : ''}`}
             style={{transform: hoveredIndex === index ? "rotateY(0deg)" : "rotateY(180deg)"}}
           >
-          Keyboard Name: {keyboard.keyboardName}
+          KEYBOARD NAME: {keyboard.keyboardName}
           <br/><br/>
-          Keycaps: {keyboard.keycaps}
+          KEYCAPS: {keyboard.keycaps}
           <br/><br/>
-          Switches: {keyboard.switches}
+          SWITCHES: {keyboard.switches}
           <br/><br/>
-          Lubed Switches: {keyboard.lubedSwitches}
+          LUBED SWITCHES: {keyboard.lubedSwitches}
           </div>
         </div>
       ))}

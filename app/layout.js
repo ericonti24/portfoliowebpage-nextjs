@@ -7,15 +7,14 @@ import Footer from './components/footer'
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body style={{backgroundColor: '#2b2b2b'}}>
+      <body style={{backgroundColor: '#2b2b2b'}}> 
           <ChakraProvider>
             <NavBar />
             <main>{children}</main>
-            {/* <Footer /> */}
-            <div 
+            {/* <div 
               style={{ marginTop: '80vh'}}>
-              {/* <Footer /> */}
-            </div>
+              <Footer />
+            </div> */}
           </ChakraProvider>
       </body>
     </html>

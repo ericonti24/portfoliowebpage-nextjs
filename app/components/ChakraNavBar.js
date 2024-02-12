@@ -1,6 +1,7 @@
 'use client'
 
-import { Box, Button, Container, Stack, Text, useColorModeValue, Flex } from '@chakra-ui/react'
+import { Box, Button, Link, Container, Stack, HStack, Text, useColorModeValue, Flex } from '@chakra-ui/react'
+import NextLink from 'next/link'
 
 export default function ChakraNavBar() {
   return (
@@ -10,9 +11,9 @@ export default function ChakraNavBar() {
     >
       <Container
         as={Stack}
-        maxW={'20xl'}
-        // py={1}
-        // direction={{ base: 'column', md: 'row' }}
+        maxW={'9xl'}
+        py={5}
+        // direction={{ base: 'column' }}
         // spacing={200}
         // justify={{ base: 'center', md: 'space-between' }}
         // align={{ base: 'center', md: 'center' }}
@@ -20,20 +21,20 @@ export default function ChakraNavBar() {
         >
         <Flex alignItems={'center'} justifyContent={'space-between'}>
 
-            <Text fontSize='4xl' color='' as="a" href='/'>
-                EO
+            <Text fontSize='4xl' as="a" fontFamily='sans-serif' href='/'>
+                Eric Ontiveros
             </Text>
-            <Stack direction={'row'} spacing={6} justifyContent={'end'}>
-            {/* <Box as="a" href='/'>
-            Home
-            </Box> */}
-            <Box as="a" href='/about' >
+            <HStack spacing={'100px'} >
+            <Box as="a" fontWeight="bold" href='/about' >
                 About
             </Box>
-            <Box as="a" href='/projects' >
+            <Box as="a" fontWeight="bold" href='/projects' w='300px'>
                 Projects
             </Box>
-            </Stack>
+            <Link as={NextLink} href='https://www.linkedin.com/in/eontiveros' isExternal>
+              LinkedIn
+            </Link>
+            </HStack>
         </Flex>
       </Container>
     </Box>

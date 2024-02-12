@@ -13,9 +13,10 @@ import {
 } from '@chakra-ui/react'
 
 export default function Project({projects}) {
+
   return (<Center>
     <Stack>
-    {projects.map((project) => (
+      {projects.map((project, index) => (
       <Box
         maxW={'445px'}
         w={'full'}
@@ -25,8 +26,8 @@ export default function Project({projects}) {
         p={6}
         overflow={'hidden'}
         m={4}
-        key={project.id}
       >
+        <Box>
         <Box h={'210px'} bg={'gray.100'} mt={-6} mx={-6} mb={6} pos={'relative'}>
          <Image h={'208px'} w={'500px'} src={project.image} alt='calendar-image'/>
         </Box>
@@ -43,6 +44,7 @@ export default function Project({projects}) {
             {project.description}
           </Text>
         </Stack>
+        </Box>
         <Stack 
           direction='row' 
           spacing={4} 
@@ -54,6 +56,8 @@ export default function Project({projects}) {
             variant='outline' 
             as="a" 
             href={project.link}
+            target='_blank'
+            rel='noopener noreferrer'
             >
               Go to project
             </Button>
@@ -62,6 +66,8 @@ export default function Project({projects}) {
             variant='outline' 
             as="a" 
             href={project.github}
+            target='_blank'
+            rel='noopener noreferrer'
             >
               Go to GitHub Repo
             </Button>

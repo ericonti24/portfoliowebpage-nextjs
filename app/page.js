@@ -12,6 +12,7 @@ import {
   Spacer,
   
 } from '@chakra-ui/react'
+import selfImage from './api/data/images/self-image3.png'
 const IMAGE = '/_next/static/media/self-image3.f98e0bfe.png'
 
 export default function ProductSimple() {

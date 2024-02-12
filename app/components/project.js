@@ -28,6 +28,7 @@ export default function Project({projects}) {
         p={6}
         overflow={'hidden'}
         m={4}
+        key={project.id}
       >
         <Box>
         <Box h={'210px'} bg={'gray.100'} mt={-6} mx={-6} mb={6} pos={'relative'}>

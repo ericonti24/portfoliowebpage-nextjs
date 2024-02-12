@@ -12,32 +12,46 @@ import {
   Spacer,
   
 } from '@chakra-ui/react'
-import selfImage from './api/data/images/self-image3.png'
 const IMAGE = '/_next/static/media/self-image3.f98e0bfe.png'
-
-// console.log(selfImage);
 
 export default function ProductSimple() {
   return (
-    <Flex>
-        <Box p='60'>
-        <Heading color={'white'} fontFamily='sans-serif' fontSize="170px" p='20'>Hi, I'm Eric.</Heading>
-        <Text color='white' p='20' fontSize="40px">Web designer, developer and tech enthusiast!</Text>
+    <Center 
+      width='100%' 
+      height='100%'
+      textAlign={'center'}
+      // border='1px solid white'
+      p="40px"
+    >
+      <Flex
+        minWidth='max-content' 
+        alignItems='center'
+        gap='20'
+      >
+        <Box>
+        <Heading 
+          color={'white'} 
+          fontFamily='sans-serif'  
+          fontSize='7vw'
+        >
+          Hi, I'm Eric
+        </Heading>
+        <Text 
+          color='white'
+          fontSize="2vw"
+        >
+          Web designer, developer and tech enthusiast!
+        </Text>
         </Box>
         <Spacer />
-          <Box
-            flex="10"
-            p='20'
-            boxSize={'900'}
-          >
+          <Box>
               <Image
-                boxSize='700px'
                 src={IMAGE}
                 alt="#"
                 borderRadius="15px 90px"
               />
             </Box>
-        
     </Flex>
+    </Center>
   )
 }

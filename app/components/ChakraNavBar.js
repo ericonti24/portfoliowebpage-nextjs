@@ -13,11 +13,6 @@ export default function ChakraNavBar() {
         as={Stack}
         maxW={'9xl'}
         py={5}
-        // direction={{ base: 'column' }}
-        // spacing={200}
-        // justify={{ base: 'center', md: 'space-between' }}
-        // align={{ base: 'center', md: 'center' }}
-        
         >
         <Flex alignItems={'center'} justifyContent={'space-between'}>
 

@@ -6,8 +6,6 @@ import '../styles.css'
 
 const AboutPage = () => {
 
-  // const image = '/_next/static/media/tiger-lite.0c2f20cc.jpg'
-
   const [keyboards, setKeyboards] = useState(KEYBOARDS)
   const [hoveredIndex, setHoveredIndex] = useState(null)
 
@@ -26,15 +24,13 @@ const AboutPage = () => {
             className={`front-card ${hoveredIndex === index ? 'hover' : ''}`}
             style={{transform: hoveredIndex === index ? "rotateY(-180deg)" : "rotateY(0deg)"}}
           >
-            <img src={keyboard.image} alt={'Keyboard Image${keyboard.id}'} style={{}}/>
+            <img src={keyboard.image} alt={'Keyboard Image'} style={{}}/>
             
           </div>
           <div 
             className={`back-card ${hoveredIndex === index ? 'hover' : ''}`}
             style={{transform: hoveredIndex === index ? "rotateY(0deg)" : "rotateY(180deg)"}}
           >
-          {/* <h1 id='keyboard-key'>Keyboard Name: </h1>
-          <p id='keyboard-value'>{keyboard.keyboardName}</p> */}
           Keyboard Name: {keyboard.keyboardName}
           <br/><br/>
           Keycaps: {keyboard.keycaps}

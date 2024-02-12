@@ -13,12 +13,6 @@ const ProjectsPage = () => {
 
   return (
     <div>
-      {/* <Flex justifyContent={'center'}>
-        <Text color={'white'} fontSize="30px">
-        Projects
-        </Text>
-      </Flex> */}
-      
       <Project projects={projects} />
     </div>
   )

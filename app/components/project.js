@@ -18,7 +18,9 @@ export default function Project({projects}) {
     <Stack>
       {projects.map((project, index) => (
       <Box
-        maxW={'445px'}
+        maxW={'500px'}
+        // width={'100px'}
+        height={'450px'}
         w={'full'}
         bg={useColorModeValue('gray')}
         boxShadow={'5xl'}
@@ -49,7 +51,7 @@ export default function Project({projects}) {
           direction='row' 
           spacing={4} 
           justifyContent={'center'} 
-          m={2}
+          m={6}
         >
           <Button 
             color={useColorModeValue('white')}

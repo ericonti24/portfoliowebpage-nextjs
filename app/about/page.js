@@ -10,13 +10,13 @@ const AboutPage = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null)
 
   return (
+    <>
+    <h2 className='keyboard-heading'>
+    One thing I love to do is to build mechanical keyboards. 
+    Here are some that I have built, and more to come. 
+    Hover over them to see more info.
+    </h2>
       <div className='about-container'>
-        {/* <h1>About</h1> */}
-        <h2 className='keyboard-heading'>
-            One thing I love to do is to build mechanical keyboards. 
-            Here are some that I have built, and more to come. 
-            Hover over them to see more info.
-          </h2>
       {keyboards.map((keyboard, index) => (
         <div 
           className='card-container'
@@ -46,6 +46,7 @@ const AboutPage = () => {
         </div>
       ))}
     </div>
+    </>
   )
 }
 

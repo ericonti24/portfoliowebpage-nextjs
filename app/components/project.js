@@ -6,6 +6,7 @@ import {
   Heading,
   Text,
   Stack,
+  HStack,
   Avatar,
   useColorModeValue,
   Button,
@@ -15,7 +16,7 @@ import {
 export default function Project({projects}) {
 
   return (<Center>
-    <Stack>
+    <Stack spacing="24">
       {projects.map((project, index) => (
       <Box
         maxW={'500px'}

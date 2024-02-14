@@ -1,4 +1,4 @@
-
+import portfolioPic from '../data/images/portfolio-site.png'
 
 export const PROJECTS = [
     {
@@ -19,7 +19,8 @@ export const PROJECTS = [
     }, 
     {
         id: 3,
-        image: "https://vercel.com/_next/image?url=%2Fapi%2Fscreenshot%3Fdark%3D1%26deploymentId%3Ddpl_5uURDwdVVDneytVfk2zim2ZJppf2%26teamId%3Dericonti24%26withStatus%3D1&w=1920&q=75&dpl=dpl_3B2tuMuw67BCAJosTgaAi1ZETT7V",
+        image: "https://vercel.com/_next/image?url=%2Fapi%2Fscreenshot%3Fdark%3D1%26deploymentId%3Ddpl_AGCwqro64tkY8gQ3LtMcmMy9QTpx%26teamId%3Dericonti24%26withStatus%3D1&w=640&q=75&dpl=dpl_58MkNeaCnV2RxPwEXeViFL4PEeU5",
+        // image: portfolioPic,
         title: "Portfolio Site", 
         description: "Personal portfolio site to display other development projects and share about and contact information. Using React framework Next.js. Chakra UI and regular CSS for styling. Hosted on Vercel.",
         link: "https://portfoliowebpage-nextjs.vercel.app/",

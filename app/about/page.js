@@ -13,7 +13,7 @@ const AboutPage = () => {
     <>
     <div className='experience-about'>
       <p>
-        Working in IT for over 5 years. In between those years went to school for software engineering.
+        Working in IT with hardware and then wanting to explore the software engineering side I  attended Flatiron school in 2021. 
         After schooling I was continuing to build and improve personal projects, as well as to continue to learn different programming languages, frameworks and tools.
       </p>
       <div class="list-container">

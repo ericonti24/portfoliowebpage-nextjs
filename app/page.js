@@ -14,11 +14,13 @@ import {
   Spacer,
   
 } from '@chakra-ui/react'
-import selfImage from './api/data/images/self-image3.png'
+// import selfImage from './api/data/images/self-image3.png'
 const IMAGE = '/_next/static/media/self-image3.f98e0bfe.png'
 
 export default function ProductSimple() {
   const [isSmallerThan768] = useMediaQuery("(max-width: 768px)");
+  // console.log(selfImage);
+  const selfImage = '/_next/static/media/self-image3.f98e0bfe.png'
   return (
     // <Center 
     //   width='100%' 
@@ -78,7 +80,7 @@ export default function ProductSimple() {
         </Box>
         <Box mb={isSmallerThan768 ? 4 : 0} >
           <Image
-            src={IMAGE}
+            src={selfImage}
             alt="#"
             borderRadius="15px 90px"
             

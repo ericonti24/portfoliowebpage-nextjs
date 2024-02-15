@@ -32,7 +32,11 @@ export default function ChakraNavBar() {
             Projects
           </Link>
           <Menu>
-            <MenuButton mx="4" fontSize="xl">
+            <MenuButton
+              mx="4" 
+              fontSize="xl"
+              fontWeight="bold"
+            >
               Contact <ChevronDownIcon />
             </MenuButton>
             <MenuList>
@@ -40,7 +44,7 @@ export default function ChakraNavBar() {
                 color='black' 
                 as={NextLink} 
                 href='https://www.linkedin.com/in/eontiveros' 
-                isExternal
+                // isExternal
                 target='_blank'
                 rel='noopener noreferrer'
               >

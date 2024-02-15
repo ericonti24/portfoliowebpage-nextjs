@@ -4,20 +4,17 @@
     align-items: center;
     text-align: center;
     flex-direction: column;
-    padding: 50px;
+    /* padding: 40px; */
     font-size: 2vw;
 }
 
 .list-container {
-    /* clear: both; */
-    padding: 50px;
+    padding: 70px;
     font-size: 1vw;
 }
 
 .list-container ul {
-    list-style-type: none;
-    padding: 10px; 
-    
+    list-style-type: none;    
 }
  
 .other-container {
@@ -25,19 +22,18 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 0;
     font-size: 2vw;
+    /* border: 1px solid white; */
 }
 
 .keyboard-heading {
-    /* font-size: 30px; */
-    /* max-width: 900px; */
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 0;
+    padding: 20px;
     font-size: 2vw;
+    /* border: 1px solid white; */
 }
 
 .about-keyboard-container {
@@ -45,6 +41,7 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    /* border: 1px solid white;   */
 }
 
 h1, h2, h3, p, ul, li {
@@ -52,14 +49,22 @@ h1, h2, h3, p, ul, li {
 }
 
 .card-container {
-    width: 300px;
-    height: 300px;
+    /* width: 400px; */
+    /* width: 25vw; */
+    width: calc(30% - 10px);
+    min-height: 200px;
     perspective: 1000px;
     position: relative;
-    margin: 9vw;
-
-    
+    margin: 1vw;
+    /* border: 1px solid white; */
 }
+
+@media (max-width: 768px) {
+    .card-container {
+      width: calc(60%); /* Cards stacked one under the other */
+      min-height: 210px;
+    }
+  }
 
 .front-card, .back-card {
     width: 100%;
@@ -77,10 +82,9 @@ h1, h2, h3, p, ul, li {
 }
 
 .front-card img {
-    /* max-width: 400px; */
-    max-width: 30vw;
+    max-width: 100%;
     max-height: 100%;
-    border-radius: 8px;
+    border-radius: 4px;
 }
 
 .back-card {

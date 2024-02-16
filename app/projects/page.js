@@ -9,7 +9,7 @@ const ProjectsPage = () => {
 
   const [projects, setProjects] = useState(PROJECTS)
 
-  console.log(projects);
+  // console.log(projects);
 
   return (
     <div>

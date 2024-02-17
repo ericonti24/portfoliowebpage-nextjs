@@ -35,10 +35,10 @@ const Milestones = () => {
       >
         {/* Text Content */}
         <Box textAlign={{ base: "center", md: "left" }}>
-          <Heading as="h1" fontSize="7vw" fontWeight="bold" mb={2} fontFamily='sans-serif' color='white'>
+          <Heading as="h1" fontSize="8xl" fontWeight="bold" mb={2} fontFamily='sans-serif' color='white'>
             Hi, I'm Eric
           </Heading>
-          <Text fontSize="2vw" color={useColorModeValue("gray.600", "gray.400")} mb={4}>
+          <Text fontSize="2xl" color={useColorModeValue("lightgray", "lightgray.400")} mb={1}>
             I enjoy web designing, developing and passionate about tech!
           </Text>
         </Box>

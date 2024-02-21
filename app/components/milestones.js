@@ -32,7 +32,6 @@ const Milestones = () => {
               <Card {...milestone} />
             </>
           )}
-
           {/* Mobile view */}
           {isMobile && (
             <>
@@ -40,7 +39,6 @@ const Milestones = () => {
               <Card {...milestone} />
             </>
           )}
-
           {/* Desktop view(right card) */}
           {isDesktop && milestone.id % 2 !== 0 && (
             <>

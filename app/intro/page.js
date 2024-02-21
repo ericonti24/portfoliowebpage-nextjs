@@ -15,7 +15,7 @@ import {
   Image
 } from '@chakra-ui/react';
 // import { ABOUT } from '../api/data/about/aboutData';
-import selfImage from '../api/data/images/self-image3.png'
+// import selfImage from '../api/data/images/self-image3.png'
 
 const IntroSection = () => {
   const isMobile = useBreakpointValue({ base: true, md: false });
@@ -32,7 +32,7 @@ const IntroSection = () => {
         // border='1px solid white'
       >
         <Box textAlign={{ base: "center", md: "left" }}>
-          <Heading as="h1" fontSize="8xl" fontWeight="bold" mb={2} fontFamily='sans-serif' color='white'>
+          <Heading as="h1" fontSize="8xl" fontWeight="bold" mb={2} fontFamily='sans-serif' color='teal'>
             Hi, I'm Eric
           </Heading>
           <Text fontSize="2xl" color={useColorModeValue("lightgray", "lightgray.400")} mb={1}>

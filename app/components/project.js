@@ -11,12 +11,17 @@ import {
   useColorModeValue,
   Button,
   Image,
+  chakra
 } from '@chakra-ui/react'
+import Head from 'next/head'
 
 export default function Project({projects}) {
 
   return (<Center>
-    <Stack spacing="24">
+    <Stack spacing="24" >
+    <chakra.h3 fontSize="4xl" fontWeight="bold" textAlign="center" color={'white'}>
+        PROJECTS
+      </chakra.h3>
       {projects.map((project, index) => (
       <Box
         maxW={'500px'}
@@ -28,7 +33,7 @@ export default function Project({projects}) {
         rounded={'md'}
         p={6}
         overflow={'hidden'}
-        m={4}
+        // m={4}
         key={project.id}
       >
         <Box>
@@ -56,22 +61,30 @@ export default function Project({projects}) {
           m={6}
         >
           <Button 
-            color={useColorModeValue('white')}
+            // color={useColorModeValue('white')}
+            _hover={{ color: 'white', bg: 'teal' }}
+            color='white'
+            bg={useColorModeValue('black')}
             variant='outline' 
             as="a" 
             href={project.link}
             target='_blank'
             rel='noopener noreferrer'
+            border='none'
             >
               Go to project
             </Button>
           <Button 
-            color={useColorModeValue('white')}
+            // color={useColorModeValue('white')}
+            _hover={{ color: 'white', bg: 'teal' }}
+            color='white'
+            bg={useColorModeValue('black')}
             variant='outline' 
             as="a" 
             href={project.github}
             target='_blank'
             rel='noopener noreferrer'
+            border='none'
             >
               Go to GitHub Repo
             </Button>

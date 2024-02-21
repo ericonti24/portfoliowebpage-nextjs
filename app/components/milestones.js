@@ -8,57 +8,19 @@ import {
   HStack,
   VStack,
   Flex,
-  Heading,
   useColorModeValue,
-  useBreakpointValue,
-  Grid,
-  Image
+  useBreakpointValue
 } from '@chakra-ui/react';
 import { ABOUT } from '../api/data/about/aboutData';
-import selfImage from '../api/data/images/self-image3.png'
 
 const Milestones = () => {
   const isMobile = useBreakpointValue({ base: true, md: false });
   const isDesktop = useBreakpointValue({ base: false, md: true });
-  // const selfImage = '/_next/static/media/self-image3.f98e0bfe.png'
-  // console.log(selfImage);
 
   return (
     <Container maxWidth="7xl" p={{ base: 2, sm: 10 }} >
-       <Grid
-        templateColumns={{ base: "1fr", md: "1fr 1fr" }}
-        gap={10}
-        alignItems="center"
-        justifyContent="center"
-        mb={20}
-        // border='1px solid white'
-      >
-        {/* Text Content */}
-        <Box textAlign={{ base: "center", md: "left" }}>
-          <Heading as="h1" fontSize="8xl" fontWeight="bold" mb={2} fontFamily='sans-serif' color='white'>
-            Hi, I'm Eric
-          </Heading>
-          <Text fontSize="2xl" color={useColorModeValue("lightgray", "lightgray.400")} mb={1}>
-            I enjoy web designing, developing and passionate about tech!
-          </Text>
-        </Box>
-
-        {/* Image */}
-        {!isMobile && (
-          <Box>
-            <Image src="/_next/static/media/self-image3.f98e0bfe.png" alt="Eric's Image" borderRadius="15px 90px" boxSize="500px" />
-          </Box>
-        )}
-      </Grid>
-      {isMobile && (
-        <Flex justifyContent="center" mt={8} mb={20}>
-          <Box>
-            <Image src="/_next/static/media/self-image3.f98e0bfe.png" alt="Eric's Image" borderRadius="15px 90px" boxSize="300px" />
-          </Box>
-        </Flex>
-      )}
-      <chakra.h3 fontSize="4xl" fontWeight="bold" mb={4} textAlign="center" color={'lightgray'}>
-        Milestones
+      <chakra.h3 fontSize="4xl" fontWeight="bold" mb={4} textAlign="center" color={'white'}>
+        MILESTONES
       </chakra.h3>
       {ABOUT.map((milestone) => (
         <Flex key={milestone.id} mb="10px">
@@ -111,7 +73,8 @@ const Card = ({ id, title, description, date }) => {
     <HStack
       flex={1}
       p={{ base: 3, sm: 6 }}
-      bg={useColorModeValue('gray.100', 'gray.800')}
+      // bg={useColorModeValue('gray.100', 'gray.800')}
+      bg={useColorModeValue('gray', 'gray.800')}
       spacing={5}
       rounded="lg"
       alignItems="center"
@@ -131,7 +94,7 @@ const Card = ({ id, title, description, date }) => {
     >
       <Box>
         {/* <Text fontSize="lg" color={isEvenId ? 'teal.400' : 'blue.400'}> */}
-        <Text fontSize="lg" color={isEvenId ? 'gray' : 'black'}>
+        <Text fontSize="lg" color={isEvenId ? 'teal.200' : 'black'}>
           {date}
         </Text>
 
@@ -174,7 +137,8 @@ const LineWithDot = () => {
           backgroundSize="cover"
           backgroundRepeat="no-repeat"
           backgroundPosition="center center"
-          bg={useColorModeValue('gray.600', 'gray.200')}
+          // bg={useColorModeValue('gray.600', 'gray.200')}
+          bg={useColorModeValue('teal')}
           borderRadius="100px"
           backgroundImage="none"
           opacity={1}

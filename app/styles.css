@@ -1,10 +1,19 @@
+.about-me-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
 .experience-about {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     flex-direction: column;
-    /* padding: 40px; */
+    padding: 70px;
     font-size: 2vw;
 }
 

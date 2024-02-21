@@ -4,20 +4,19 @@ import {useState, useEffect} from 'react'
 import Project from '../components/project'
 import {PROJECTS} from '../api/data/data'
 import {Center, Flex, Text} from '@chakra-ui/react'
+import Milestones from '../components/milestones'
 
-const ProjectsPage = () => {
+const MilestonesSection = () => {
 
   const [projects, setProjects] = useState(PROJECTS)
 
   // console.log(projects);
 
   return (
-    <div id='project-section'>
-      <Project projects={projects} />
+    <div id='milestones-section'>
+      <Milestones/>
     </div>
   )
 }
 
-export default ProjectsPage
-
-
+export default MilestonesSection

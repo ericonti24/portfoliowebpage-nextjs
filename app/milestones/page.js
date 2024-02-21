@@ -8,10 +8,6 @@ import Milestones from '../components/milestones'
 
 const MilestonesSection = () => {
 
-  const [projects, setProjects] = useState(PROJECTS)
-
-  // console.log(projects);
-
   return (
     <div id='milestones-section'>
       <Milestones/>

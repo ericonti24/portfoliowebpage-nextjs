@@ -9,11 +9,8 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en">
-      <body style={{backgroundColor: '#2b2b2b'}}> 
-          {/* <ChakraProvider>
-            <NavBar scrollToSections={scrollToSections}/> */}
+      <body style={{backgroundColor: '#2b2b2b'}}>
             <main>{children}</main>
-          {/* </ChakraProvider> */}
       </body>
     </html>
   )

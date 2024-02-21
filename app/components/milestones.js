@@ -73,7 +73,6 @@ const Card = ({ id, title, description, date }) => {
     <HStack
       flex={1}
       p={{ base: 3, sm: 6 }}
-      // bg={useColorModeValue('gray.100', 'gray.800')}
       bg={useColorModeValue('gray', 'gray.800')}
       spacing={5}
       rounded="lg"
@@ -93,7 +92,6 @@ const Card = ({ id, title, description, date }) => {
       }}
     >
       <Box>
-        {/* <Text fontSize="lg" color={isEvenId ? 'teal.400' : 'blue.400'}> */}
         <Text fontSize="lg" color={isEvenId ? 'teal.200' : 'black'}>
           {date}
         </Text>
@@ -137,7 +135,6 @@ const LineWithDot = () => {
           backgroundSize="cover"
           backgroundRepeat="no-repeat"
           backgroundPosition="center center"
-          // bg={useColorModeValue('gray.600', 'gray.200')}
           bg={useColorModeValue('teal')}
           borderRadius="100px"
           backgroundImage="none"

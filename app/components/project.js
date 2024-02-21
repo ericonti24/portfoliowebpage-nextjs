@@ -25,7 +25,6 @@ export default function Project({projects}) {
       {projects.map((project, index) => (
       <Box
         maxW={'500px'}
-        // width={'100px'}
         height={'450px'}
         w={'full'}
         bg={useColorModeValue('gray')}
@@ -33,7 +32,6 @@ export default function Project({projects}) {
         rounded={'md'}
         p={6}
         overflow={'hidden'}
-        // m={4}
         key={project.id}
       >
         <Box>
@@ -60,8 +58,7 @@ export default function Project({projects}) {
           justifyContent={'center'} 
           m={6}
         >
-          <Button 
-            // color={useColorModeValue('white')}
+          <Button
             _hover={{ color: 'white', bg: 'teal' }}
             color='white'
             bg={useColorModeValue('black')}
@@ -74,8 +71,7 @@ export default function Project({projects}) {
             >
               Go to project
             </Button>
-          <Button 
-            // color={useColorModeValue('white')}
+          <Button
             _hover={{ color: 'white', bg: 'teal' }}
             color='white'
             bg={useColorModeValue('black')}

@@ -2,7 +2,6 @@
 
 import { useEffect } from 'react'
 import { ChakraProvider } from "@chakra-ui/react";
-import {BrowserRouter as Router, Route } from "react-router-dom";
 import ChakraNavBar from './components/ChakraNavBar.js';
 import IntroSection from './intro/page.js'
 import MilestonesSection from './milestones/page.js'

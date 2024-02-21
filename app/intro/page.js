@@ -14,7 +14,7 @@ import {
   Grid,
   Image
 } from '@chakra-ui/react';
-import { ABOUT } from '../api/data/about/aboutData';
+// import { ABOUT } from '../api/data/about/aboutData';
 import selfImage from '../api/data/images/self-image3.png'
 
 const IntroSection = () => {

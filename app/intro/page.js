@@ -14,12 +14,11 @@ import {
   Grid,
   Image
 } from '@chakra-ui/react';
-// import { ABOUT } from '../api/data/about/aboutData';
 // import selfImage from '../api/data/images/self-image3.png'
 
 const IntroSection = () => {
   const isMobile = useBreakpointValue({ base: true, md: false });
-  const isDesktop = useBreakpointValue({ base: false, md: true });
+  // const isDesktop = useBreakpointValue({ base: false, md: true });
 
   return (
     <Container maxWidth="7xl" p={{ base: 2, sm: 10 }} >

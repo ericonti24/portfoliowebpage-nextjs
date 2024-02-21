@@ -9,8 +9,6 @@ const ProjectsPage = () => {
 
   const [projects, setProjects] = useState(PROJECTS)
 
-  // console.log(projects);
-
   return (
     <div id='project-section'>
       <Project projects={projects} />
